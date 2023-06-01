@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="view_anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1013.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NetWork.Controller">
+   <children>
+      <TableView fx:id="table" layoutX="134.0" layoutY="116.0" prefHeight="591.0" prefWidth="874.0" stylesheets="@application.css">
+        <columns>
+            <TableColumn fx:id="city" prefWidth="111.99996662139893" text="시도명" />
+          <TableColumn fx:id="district" prefWidth="108.800048828125" text="시군구명" />
+            <TableColumn fx:id="areaName" prefWidth="515.3332824707031" text="지역명" />
+            <TableColumn fx:id="manageName" prefWidth="136.666748046875" text="구역 및 상세" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSearch" layoutX="934.0" layoutY="56.0" mnemonicParsing="false" onAction="#Search" prefHeight="22.0" prefWidth="46.0" style="-fx-background-color: red;" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="34.0">
+               <image>
+                  <Image url="@../../../../이미지/free-icon-magnifier-71403.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ComboBox fx:id="comboBox_2" layoutX="311.0" layoutY="66.0" prefHeight="22.0" prefWidth="154.0" />
+      <TextField fx:id="txtMsg" layoutX="475.0" layoutY="66.0" prefHeight="22.0" prefWidth="447.0" promptText="단위는 빼고 검색하십시오 ex) 신성동 -&gt; 신성 신현리 -&gt; 신현" />
+      <VBox fx:id="view_vbox" layoutY="-8.0" prefHeight="738.0" prefWidth="134.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <ComboBox fx:id="comboBox" layoutX="145.0" layoutY="66.0" onAction="#combobox1_event" prefHeight="22.0" prefWidth="154.0" />
+      <Button fx:id="view_close_button" layoutX="955.0" mnemonicParsing="false" onAction="#view_close_action" prefHeight="51.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="41.0">
+               <image>
+                  <Image url="@../../../../이미지/x-button-icon-20.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

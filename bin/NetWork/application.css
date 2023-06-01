@@ -1,0 +1,42 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#paneID {
+	-fx-background-color : "edebda";
+}
+#painid2{
+	-fx-background-color : black;
+}
+#vbox{
+	-fx-background-color : black;
+}
+#vbox_detail{
+	-fx-background-color : "#21184d";
+}
+#pain_detail{
+	-fx-background-color : "edebda";
+}
+#hbox_detail2{
+	-fx-background-color : "#21184d";
+}
+.button{
+	-fx-font-weight : bold;
+	-fx-font-family : "Arial Narrow";
+}
+.label{
+	
+}
+#button_bookmark{
+	-fx-background-color : "white";
+}
+
+#view_vbox {
+	-fx-background-color : "#21184d";
+}
+
+#view_anchorpane {
+	-fx-background-color : "edebda";
+}
+
+#like_vbox {
+	-fx-background-color : "#21184d";
+}

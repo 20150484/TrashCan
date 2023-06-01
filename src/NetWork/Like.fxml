@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NetWork.LikeController">
+   <children>
+      <Label layoutX="251.0" layoutY="32.0" text="지역" />
+      <TextField fx:id="txt1" editable="false" layoutX="251.0" layoutY="69.0" prefHeight="22.0" prefWidth="107.0" />
+      <Label layoutX="251.0" layoutY="101.0" text="요일" />
+      <TextField fx:id="txt2" editable="false" layoutX="250.0" layoutY="122.0" prefHeight="22.0" prefWidth="107.0" />
+      <TextField fx:id="txt3" layoutX="250.0" layoutY="181.0" prefHeight="108.0" prefWidth="366.0" />
+      <Label layoutX="14.0" layoutY="101.0" />
+      <VBox fx:id="like_vbox" layoutY="64.0" prefHeight="259.0" prefWidth="215.0">
+         <children>
+            <Button fx:id="button" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Go" prefHeight="48.0" prefWidth="215.0" style="-fx-background-color: #21184d;" text="      검색" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button1" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Go2" prefHeight="48.0" prefWidth="215.0" style="-fx-background-color: #21184d;" text="      불러오기" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="button3" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Go3" prefHeight="48.0" prefWidth="215.0" style="-fx-background-color: #21184d;" text="      내 지역" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox prefHeight="64.0" prefWidth="215.0" style="-fx-background-color: #21184d;" />
+      <Button fx:id="like_button" layoutX="557.0" layoutY="6.0" mnemonicParsing="false" onAction="#like_button_event" prefHeight="48.0" prefWidth="58.0">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="41.0">
+               <image>
+                  <Image url="@../../../../이미지/x-button-icon-20.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
